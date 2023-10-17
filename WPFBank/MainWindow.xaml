@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPFBank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBank"
+        mc:Ignorable="d"
+        Title="Ridas Bank - Log In" Height="600" Width="800" ResizeMode="NoResize" Background="#C7BEAF" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!--Elements-->
+
+        <Image Grid.Column="4" Grid.Row="1" Grid.RowSpan="3" Source="Images/Ridas Bank.png" HorizontalAlignment="Right"/>
+
+        <Label Name="lblLogin" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25" Foreground="#131B4A" FontWeight="DemiBold"/>
+        
+        <Border Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="7" CornerRadius="10" BorderBrush="#131B4A" BorderThickness="2" Background="LightGray"/>
+
+        <Label Grid.Column="2" Grid.Row="4" Content="Username" HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Foreground="#131B4A" FontWeight="DemiBold"/>
+        <Label Grid.Column="2" Grid.Row="5" Content="Password" HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Foreground="#131B4A" FontWeight="DemiBold"/>
+
+        <TextBox Name="txtUsername" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <PasswordBox Name="pbxPassword" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="65 0 65 26" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <Label Name="lblCapsLock" Grid.Column="3" Grid.Row="5" Grid.RowSpan="2" Content="⇪" Margin="123 36 0 0" FontSize="25" FontWeight="Black" Visibility="Hidden"/>
+
+        <Button Name="btnLogin" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="130 10" Content="Log in" Foreground="#131B4A" BorderBrush="#131B4A"/>
+
+        <TextBlock Name="blkNewAccount" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Text="Create a new account" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#131B4A" MouseDown="blkNewAccount_MouseDown"/>
+
+        <CheckBox Name="bxAdminLogin" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Content="Log in as Admin" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#131B4A"/>
+    </Grid>
+</Window>
