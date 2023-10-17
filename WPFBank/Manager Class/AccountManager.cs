@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using WPFBank.Interface;
 
 namespace WPFBank.Manager_Class
 {
-    class AccountManager
+    static class AccountManager
     {
+        public static List<IAccount> clientAccountList { get; set; } = new();
     }
 }

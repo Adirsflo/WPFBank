@@ -14,7 +14,6 @@ namespace WPFBank
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void blkNewAccount_MouseDown(object sender, MouseButtonEventArgs e)
@@ -26,7 +25,6 @@ namespace WPFBank
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
             if (bxAdminLogin.IsChecked == true)
             {
                 if (txtUsername.Text.ToLower() == "admin" && pbxPassword.Password == "Password")
@@ -52,10 +50,9 @@ namespace WPFBank
                 {
                     foreach (Client user in UserManager.clientList)
                     {
-
-
                         if (txtUsername.Text.ToLower() == user.Username.ToLower() && pbxPassword.Password == user.Password)
                         {
+                            isMatchingInput = true;
                             AccountsWindow accountsWindow = new AccountsWindow();
                             accountsWindow.Show();
                             Close();
