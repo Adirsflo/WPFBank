@@ -3,13 +3,19 @@
 namespace WPFBank
 {
     /// <summary>
-    /// Interaction logic for AdminWindow.xaml
+    /// Interaction logic for AccountsWindow.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class AccountsWindow : Window
     {
-        public AdminWindow()
+        public AccountsWindow()
         {
             InitializeComponent();
+
+            string name = "Anders";
+            string lastname = "Andersson";
+
+            lblWelcome.Content += $" {name}";
+
         }
 
         private void btnLogOutAdmin_Click(object sender, RoutedEventArgs e)

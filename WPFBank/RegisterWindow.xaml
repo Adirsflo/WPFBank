@@ -43,13 +43,13 @@
         <Label Grid.Column="2" Grid.Row="7" Content="Password" HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Foreground="#131B4A" FontWeight="DemiBold"/>
         <Label Grid.Column="2" Grid.Row="8" Content="Confirm Password" Margin="45 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Foreground="#131B4A" FontWeight="DemiBold"/>
 
-        <TextBox Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
-        <TextBox Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
-        <TextBox Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
-        <TextBox Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
-        <TextBox Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <TextBox Name="txtRegisterUsername" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <TextBox Name="txtRegisterFirstName" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <TextBox Name="txtRegisterLastName" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <TextBox Name="txtRegisterPassword" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
+        <TextBox Name="txtConfirmPassword" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" Margin="65 0 65 25" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
 
-        <Button Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="130 30" Content="Create Account" Foreground="#131B4A" BorderBrush="#131B4A"/>
+        <Button Name="btnCreateAccount" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="130 30" Content="Create Account" Foreground="#131B4A" BorderBrush="#131B4A" Click="btnCreateAccount_Click" />
         <Button Name="btnReturn" Grid.Column="1" Grid.Row="11" Height="30" Width="80" HorizontalAlignment="Left" Content="Return" BorderBrush="#131B4A" Foreground="#131B4A" Click="btnReturn_Click"/>
 
     </Grid>

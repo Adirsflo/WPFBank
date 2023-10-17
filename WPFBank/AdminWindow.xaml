@@ -13,6 +13,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -33,10 +35,23 @@
 
         <!--Elements-->
 
-        <Image Grid.Column="4" Grid.Row="1" Grid.RowSpan="3" Source="Images/Ridas Bank.png" HorizontalAlignment="Right"/>
+        <Image Grid.Column="6" Grid.Row="1" Grid.RowSpan="3" Source="Images/Ridas Bank.png" HorizontalAlignment="Right"/>
 
-        <ListView Grid.Column=""/>
+        <ListView Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="8" BorderBrush="#131B4A">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="60" Header="Username" DisplayMemberBinding="{Binding Username}"/>
+                    <GridViewColumn Width="70" Header="Full Name" DisplayMemberBinding="{Binding FullName}"/>
+                    <GridViewColumn Width="70" Header="Account No." DisplayMemberBinding="{Binding AccountNumber}"/>
+                    <GridViewColumn Width="70" Header="Savings a/c" DisplayMemberBinding="{Binding SavingsAccount}"/>
+                    <GridViewColumn Width="70" Header="Salary a/c" DisplayMemberBinding="{Binding SalaryAccount}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
+        <Label Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2" Content="Admin View" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25" Foreground="#131B4A" FontWeight="DemiBold"/>
+
+        <Button Name="btnLogOutAdmin" Grid.Column="5" Grid.Row="1" Height="30" Width="50" HorizontalAlignment="Right" Margin="0 2 5 0" Content="Log Out" Foreground="#131B4A" BorderBrush="#131B4A" FontSize="11" Click="btnLogOutAdmin_Click"/>
 
     </Grid>
 </Window>

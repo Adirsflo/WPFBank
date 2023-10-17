@@ -46,7 +46,7 @@
         <PasswordBox Name="pbxPassword" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Margin="65 0 65 26" VerticalContentAlignment="Center" BorderBrush="#131B4A" FontSize="12"/>
         <Label Name="lblCapsLock" Grid.Column="3" Grid.Row="5" Grid.RowSpan="2" Content="⇪" Margin="123 36 0 0" FontSize="25" FontWeight="Black" Visibility="Hidden"/>
 
-        <Button Name="btnLogin" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="130 10" Content="Log in" Foreground="#131B4A" BorderBrush="#131B4A"/>
+        <Button Name="btnLogin" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Margin="130 10" Content="Log in" Foreground="#131B4A" BorderBrush="#131B4A" Click="btnLogin_Click"/>
 
         <TextBlock Name="blkNewAccount" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Text="Create a new account" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#131B4A" MouseDown="blkNewAccount_MouseDown"/>
 
