@@ -1,11 +1,7 @@
 ﻿namespace WPFBank.Interface
 {
-    class SavingsAccount : IAccount
+    public class SavingsAccount : Account
     {
-        public double SavingsBalance { get; set; } = 1000;
-        public void TransferMoney()
-        {
-
-        }
+        public decimal Interest { get; set; }
     }
 }

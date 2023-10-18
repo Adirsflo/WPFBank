@@ -1,7 +1,25 @@
 ﻿namespace WPFBank.Interface
 {
-    public interface IAccount
+    public class Account
     {
-        public void TransferMoney();
+        public decimal Balance { get; set; }
+        public void TransferMoney(Account accountTransferingTo, decimal amount)
+        {
+            if (CheckBalance(amount))
+            {
+                accountTransferingTo.Balance += amount;
+
+                this.Balance -= amount;
+            }
+        }
+
+        private bool CheckBalance(decimal amount)
+        {
+            if (amount >= Balance)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

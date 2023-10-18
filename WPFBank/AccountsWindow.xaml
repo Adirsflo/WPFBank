@@ -41,7 +41,7 @@
         <Border Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="60 0 60 20" CornerRadius="10" BorderBrush="#131B4A" BorderThickness="2" Background="LightGray"/>
         
         <Label Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2" Content="Balance" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25" Foreground="#131B4A" FontWeight="DemiBold"/>
-        <Label Name="lblWelcome" Grid.Column="5" Grid.Row="2" Content="Welcome" Margin="0 21 0 0" HorizontalAlignment="Right" Foreground="#131B4A"/>
+        <Label Name="lblWelcome" Grid.Column="5" Grid.Row="2" Content="Welcome " Margin="0 21 0 0" HorizontalAlignment="Right" Foreground="#131B4A"/>
         <Label Grid.Column="2" Grid.Row="4" Content="Savings Account" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#131B4A" FontWeight="DemiBold"/>
         <Label Grid.Column="2" Grid.Row="5" Content="Salary Account" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#131B4A" FontWeight="DemiBold"/>
         <Label Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="2" Content="Salary Account" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#131B4A" FontWeight="DemiBold" FontSize="25"/>

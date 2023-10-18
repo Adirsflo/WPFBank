@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WPFBank.Methods;
 
 namespace WPFBank
 {
@@ -7,14 +8,15 @@ namespace WPFBank
     /// </summary>
     public partial class AccountsWindow : Window
     {
-        public AccountsWindow()
+        public AccountsWindow(User user)
         {
             InitializeComponent();
 
-            string name = "Anders";
-            string lastname = "Andersson";
-
-            lblWelcome.Content += $" {name}";
+            if (user.GetType() == typeof(Client))
+            {
+                Client client = (Client)user;
+                lblWelcome.Content += client.GetInfo();
+            }
 
         }
 

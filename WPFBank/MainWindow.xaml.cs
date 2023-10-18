@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using WPFBank.Manager_Class;
-using WPFBank.Methods;
 
 namespace WPFBank
 {
@@ -44,16 +43,16 @@ namespace WPFBank
 
                 if (UserManager.clientList.Count == 0)
                 {
-                    MessageBox.Show("The username and password doesn't match. Please try again!", "Invalid Login");
+                    MessageBox.Show("There is no registerd account. Please create an account!", "Invalid Login");
                 }
                 else
                 {
-                    foreach (Client user in UserManager.clientList)
+                    foreach (User user in UserManager.clientList)
                     {
                         if (txtUsername.Text.ToLower() == user.Username.ToLower() && pbxPassword.Password == user.Password)
                         {
                             isMatchingInput = true;
-                            AccountsWindow accountsWindow = new AccountsWindow();
+                            AccountsWindow accountsWindow = new AccountsWindow(user);
                             accountsWindow.Show();
                             Close();
                         }
